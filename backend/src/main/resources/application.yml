@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=your_db;trustServerCertificate=true
+    username: your_username
+    password: your_password
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  mybatis:
+    mapper-locations: classpath:mappers/*.xml
+    configuration:
+      map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com.dit: DEBUG

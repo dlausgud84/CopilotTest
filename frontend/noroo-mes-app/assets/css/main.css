@@ -1,0 +1,9 @@
+/* 전역 스타일 */
+body {
+  margin: 0;
+  font-family: 'D2Coding', Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
